@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="shortcut icon" href="https://img.freepik.com/vector-premium/vector-paloma-paz-icono-logotipo-plano-fondo-azul-diseno-cartel-dia-mundial-paz-simbolo-paz_955564-1598.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+        <form method="post" action="RegistroUsuario">
+            <h2>Formulario de Registro</h2>
+        
+            <fieldset class="fieldset-section">
+                <legend>Datos Personales</legend>
+                
+                <div class="campo campo-nombre-apellidos">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+        
+                    <div class="campo">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </div>
+                </div>
+        
+                <div class="campo">
+                    <label for="foto-perfil">Foto de perfil:</label>
+                    <div class="foto-perfil-container">
+                        <label for="foto-perfil">
+                            <span>Selecciona tu foto</span>
+                            <img id="foto-preview" src="" alt="Foto de perfil previa" style="display: none;">
+                        </label>
+                        <input type="file" id="foto-perfil" name="foto-perfil" accept="image/*" onchange="mostrarImagen(event)" required>
+                    </div>
+                </div>
+        
+                <div class="campo">
+                    <label for="biografia">Biografía:</label>
+                    <textarea id="biografia" name="biografia"></textarea>
+                </div>
+        
+                <div class="campo">
+                    <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                </div>
+        
+                <div class="campo">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona tu país</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="canada">Canadá</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="costarica">Costa Rica</option>
+                        <option value="cuba">Cuba</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="elsalvador">El Salvador</option>
+                        <option value="espana">España</option>
+                        <option value="estadosunidos">Estados Unidos</option>
+                        <option value="guatemala">Guatemala</option>
+                        <option value="honduras">Honduras</option>
+                        <option value="mexico">México</option>
+                        <option value="nicaragua">Nicaragua</option>
+                        <option value="panama">Panamá</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="peru">Perú</option>
+                        <option value="repdom">República Dominicana</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="venezuela">Venezuela</option>
+                    </select>
+                </div>
+            </fieldset>
+        
+            <fieldset class="fieldset-section">
+                <legend>Información de Cuenta</legend>
+        
+                <div class="campo">
+                    <label for="nombre-usuario">Nombre de usuario:</label>
+                    <input type="text" id="nombre-usuario" name="nombre-usuario" required>
+                </div>
+        
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+        
+                <div class="campo">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+        
+                <div class="campo">
+                    <label for="confirmar-contrasena">Confirmar contraseña:</label>
+                    <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+                </div>
+        
+                <div class="campo">
+                    <input type="checkbox" id="terminos-condiciones" name="terminos-condiciones" required>
+                    <label for="terminos-condiciones">
+                        Acepto los <a href="politica-privacidad.html" target="_blank">términos y condiciones</a> de acuerdo a la <br>política de privacidad de datos de Source Hope.
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <button type="submit">Registrar</button>
+                </div>      
+            </fieldset>
+
+            <div class="campo">
+                <p>¿Ya te has registrado? <a href="log-in.html">Iniciar Sesión</a></p>
+            </div>
+        </form>      
+        
+        
+
+<script src="registro.js"></script>
+</body>
+</html>

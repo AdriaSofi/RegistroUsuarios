@@ -1,0 +1,3 @@
+com\mycompany\registrodeusuarios\resources\JakartaEE8Resource.class
+controlador\RegistroUsuario.class
+com\mycompany\registrodeusuarios\JakartaRestConfiguration.class
